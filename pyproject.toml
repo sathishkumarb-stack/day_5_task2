@@ -1,0 +1,22 @@
+[project]
+name = "customer-api-task2"
+version = "1.0.0"
+description = "Customer CRUD API with API Key and Pagination"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv",
+    "email-validator"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx"
+]
